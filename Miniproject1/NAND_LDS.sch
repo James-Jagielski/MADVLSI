@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
 K {}
@@ -13,22 +13,25 @@ N 390 -90 390 10 {
 lab=A}
 N 490 -90 490 10 {
 lab=B}
-N 360 -30 360 40 {
+N 360 -130 360 -60 {
+lab=VP}
+N 360 -130 520 -130 {
+lab=VP}
+N 520 -130 520 -60 {
+lab=VP}
+N 520 -20 520 40 {
 lab=Y}
-N 360 -30 440 -30 {
+N 440 -20 520 -20 {
 lab=Y}
-N 440 -60 440 -30 {
+N 440 -60 440 -20 {
 lab=Y}
-N 360 -130 360 -60 {}
-N 360 -130 520 -130 {}
-N 520 -130 520 -60 {}
-C {devices/opin.sym} 360 -30 2 0 {name=p4 lab=Y}
+C {devices/opin.sym} 520 -20 0 0 {name=p4 lab=Y}
 C {devices/ipin.sym} 390 -90 1 0 {name=p2 lab=A}
 C {devices/ipin.sym} 490 -90 1 0 {name=p3 lab=B}
-C {devices/iopin.sym} 520 -60 0 0 {name=p1 lab=VP}
+C {devices/iopin.sym} 360 -60 2 0 {name=p1 lab=VP}
 C {madvlsi/pmos3.sym} 490 -60 1 0 {name=M1
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -43,7 +46,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 390 -60 1 0 {name=M2
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -58,7 +61,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 390 40 1 0 {name=M3
 L=0.15
-W=1
+W=2
 body=GND
 nf=1
 mult=1
@@ -73,7 +76,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 490 40 1 0 {name=M4
 L=0.15
-W=1
+W=2
 body=GND
 nf=1
 mult=1
@@ -86,4 +89,4 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 520 40 0 0 {name=p5 lab=VN}
+C {devices/iopin.sym} 360 40 2 0 {name=p5 lab=VN}

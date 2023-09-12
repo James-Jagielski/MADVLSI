@@ -1,0 +1,23 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1694521872
+<< checkpaint >>
+rect -3932 -3932 4902 5122
+<< locali >>
+rect 0 170 60 210
+rect 910 170 970 210
+rect 0 40 60 80
+<< metal1 >>
+rect 910 1140 970 1141
+rect 0 760 60 1140
+rect 0 250 110 630
+use inverter  inverter_0
+timestamp 1694484618
+transform 1 0 800 0 1 440
+box -250 -310 170 750
+use NAND  NAND_0
+timestamp 1694482200
+transform 1 0 250 0 1 440
+box -250 -440 300 750
+<< end >>

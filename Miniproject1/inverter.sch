@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
 K {}
@@ -19,14 +19,17 @@ N 40 -80 100 -80 {
 lab=A}
 N 140 -160 140 -150 {
 lab=VP}
+N 140 -150 140 -120 {
+lab=VP}
+N 140 -30 140 0 {
+lab=VN}
 C {devices/ipin.sym} 40 -80 0 0 {name=p2 lab=A}
 C {devices/iopin.sym} 140 -160 3 0 {name=p3 lab=VP}
 C {devices/iopin.sym} 140 0 1 0 {name=p4 lab=VN}
 C {devices/opin.sym} 190 -80 0 0 {name=p5 lab=Y}
-C {madvlsi/pmos3.sym} 140 -120 0 0 {name=M2
+C {madvlsi/pmos4.sym} 140 -120 0 0 {name=M2
 L=0.15
-W=1
-body=VDD
+W=2
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -38,11 +41,10 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 140 -30 0 0 {name=M1
+C {madvlsi/nmos4.sym} 140 -30 0 0 {name=M1
 L=0.15
 W=1
-body=GND
-nf=1
+nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
