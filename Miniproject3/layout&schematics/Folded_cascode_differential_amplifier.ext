@@ -1,0 +1,89 @@
+timestamp 1697759168
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use diffamp_cell diffamp_cell_0 1 0 190 0 1 2290
+use Cascode_voltage_bias Cascode_voltage_bias_0 1 0 -5650 0 1 -1090
+node "li_n190_10#" 144 205.353 -190 10 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18000 980 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n230_1550#" 294 397.875 -230 1550 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36800 1920 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n360_3080#" 480 630.486 -360 3080 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60000 3080 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n290_3220#" 177 248.62 -290 3220 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25700 1280 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_n230_1550#" "li_n190_10#" 7.77197
+cap "li_n230_1550#" "li_n360_3080#" 11.8631
+cap "li_n290_3220#" "li_n360_3080#" 35.3877
+cap "diffamp_cell_0/Vcn" "diffamp_cell_0/GND" -1.42109e-14
+cap "diffamp_cell_0/V2" "diffamp_cell_0/Vbn" 0.265044
+cap "diffamp_cell_0/Vbn" "diffamp_cell_0/Vcp" -1.74658
+cap "diffamp_cell_0/VDD" "diffamp_cell_0/GND" -2.02454
+cap "Cascode_voltage_bias_0/Vcp" "diffamp_cell_0/GND" 0.0654752
+cap "diffamp_cell_0/V2" "Cascode_voltage_bias_0/Vcp" 0.0319996
+cap "diffamp_cell_0/a_470_n1120#" "diffamp_cell_0/Vbn" 1.3339
+cap "diffamp_cell_0/GND" "diffamp_cell_0/Vcn" 5.86631
+cap "diffamp_cell_0/a_270_n2170#" "diffamp_cell_0/Vcn" 0.157602
+cap "diffamp_cell_0/V2" "diffamp_cell_0/Vcn" 0.297203
+cap "diffamp_cell_0/Vbn" "diffamp_cell_0/Vcn" -5.38119
+cap "diffamp_cell_0/a_270_n2170#" "diffamp_cell_0/GND" 47.7863
+cap "diffamp_cell_0/V1" "diffamp_cell_0/Vbn" 0.16253
+cap "diffamp_cell_0/V2" "diffamp_cell_0/GND" 7.39583
+cap "diffamp_cell_0/Vcp" "diffamp_cell_0/GND" 0.0878995
+cap "diffamp_cell_0/a_270_n2170#" "diffamp_cell_0/Vbn" 14.5701
+cap "diffamp_cell_0/Vbn" "diffamp_cell_0/GND" 52.0842
+cap "diffamp_cell_0/Vbn" "diffamp_cell_0/a_270_n1120#" 0.076514
+cap "diffamp_cell_0/GND" "diffamp_cell_0/Vbn" 0.269202
+cap "diffamp_cell_0/Vbn" "diffamp_cell_0/V2" 0.141333
+cap "diffamp_cell_0/Vbn" "diffamp_cell_0/a_470_n1120#" 1.31105
+cap "diffamp_cell_0/GND" "diffamp_cell_0/a_270_n2170#" 0.09253
+cap "diffamp_cell_0/Vcn" "diffamp_cell_0/a_270_n2170#" 0.158267
+cap "diffamp_cell_0/GND" "diffamp_cell_0/V2" 0.482238
+cap "diffamp_cell_0/Vcp" "diffamp_cell_0/GND" 0.660418
+cap "diffamp_cell_0/Vcp" "diffamp_cell_0/a_270_n2170#" 0.0190688
+cap "diffamp_cell_0/a_270_n2170#" "diffamp_cell_0/GND" 12.244
+cap "diffamp_cell_0/a_270_n1120#" "diffamp_cell_0/GND" 0.0766387
+cap "diffamp_cell_0/Vbp" "diffamp_cell_0/VDD" 0.132104
+cap "diffamp_cell_0/VDD" "diffamp_cell_0/GND" 9.43677
+cap "diffamp_cell_0/VDD" "diffamp_cell_0/V1" 7.05486
+cap "diffamp_cell_0/Vbn" "diffamp_cell_0/Vcp" -1.67649
+cap "diffamp_cell_0/VDD" "diffamp_cell_0/a_470_n1120#" 0.0156227
+cap "Cascode_voltage_bias_0/a_2640_2790#" "diffamp_cell_0/a_270_n2170#" 0.124726
+cap "diffamp_cell_0/VDD" "Cascode_voltage_bias_0/a_2340_2820#" 0.0156227
+cap "diffamp_cell_0/a_270_n2170#" "diffamp_cell_0/Vcp" 2.39783
+cap "diffamp_cell_0/a_470_n1120#" "diffamp_cell_0/GND" 0.0744271
+cap "diffamp_cell_0/VDD" "diffamp_cell_0/Vcp" 361.87
+cap "Cascode_voltage_bias_0/a_2340_2820#" "diffamp_cell_0/GND" 0.0810354
+cap "Cascode_voltage_bias_0/a_2340_2820#" "diffamp_cell_0/V1" 0.0340511
+cap "diffamp_cell_0/a_270_n2170#" "diffamp_cell_0/Vbn" 18.7671
+cap "diffamp_cell_0/VDD" "diffamp_cell_0/a_670_n1120#" 0.0451334
+cap "diffamp_cell_0/VDD" "diffamp_cell_0/Vbn" -0.856993
+cap "diffamp_cell_0/Vcp" "diffamp_cell_0/GND" 3.59437
+cap "diffamp_cell_0/V1" "diffamp_cell_0/Vcp" 0.0479922
+cap "diffamp_cell_0/Vbp" "diffamp_cell_0/Vcp" -2.25531
+cap "diffamp_cell_0/Vcn" "diffamp_cell_0/Vbn" -1.25164
+cap "diffamp_cell_0/a_270_n1120#" "diffamp_cell_0/VDD" 2.48615
+cap "Cascode_voltage_bias_0/a_2340_2820#" "diffamp_cell_0/Vcp" 0.077275
+cap "diffamp_cell_0/VDD" "diffamp_cell_0/a_270_n2170#" 56.4205
+cap "diffamp_cell_0/Vbn" "diffamp_cell_0/GND" 52.7761
+cap "diffamp_cell_0/a_670_n1120#" "diffamp_cell_0/GND" 0.0388962
+cap "Cascode_voltage_bias_0/a_2640_2790#" "diffamp_cell_0/Vcp" 0.00266065
+cap "diffamp_cell_0/a_270_n1120#" "diffamp_cell_0/VDD" 1.64203
+cap "diffamp_cell_0/VDD" "diffamp_cell_0/Vcp" 195.227
+cap "diffamp_cell_0/a_270_n1120#" "diffamp_cell_0/VDD" 0.0186306
+cap "diffamp_cell_0/a_270_n2170#" "diffamp_cell_0/VDD" 0.0292798
+cap "diffamp_cell_0/VDD" "diffamp_cell_0/Vbp" 15.0726
+cap "Cascode_voltage_bias_0/Vbn" "diffamp_cell_0/Vcp" -0.335968
+cap "Cascode_voltage_bias_0/a_2340_2820#" "diffamp_cell_0/VDD" 0.0126825
+cap "diffamp_cell_0/Vbp" "diffamp_cell_0/Vcp" -15.7462
+merge "diffamp_cell_0/GND" "Cascode_voltage_bias_0/GND" -656.35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90000 -1500 0 0 0 0 0 0 0 0 0 0
+merge "Cascode_voltage_bias_0/GND" "VSUBS"
+merge "Cascode_voltage_bias_0/Vbn" "diffamp_cell_0/Vbn" -287.061 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14000 -860 0 0 0 0 0 0 0 0 0 0 0 0
+merge "diffamp_cell_0/Vbn" "li_n230_1550#"
+merge "Cascode_voltage_bias_0/Vbp" "diffamp_cell_0/Vbp" -132.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9600 -640 0 0 0 0 0 0 0 0 0 0 0 0
+merge "diffamp_cell_0/Vbp" "li_n290_3220#"
+merge "Cascode_voltage_bias_0/VDD" "diffamp_cell_0/VDD" -672.065 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90000 -1500 0 0 0 0 0 0 0 0 0 0
+merge "Cascode_voltage_bias_0/Vcp" "diffamp_cell_0/Vcp" -476.393 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16800 -1000 0 0 0 0 0 0 0 0 0 0 0 0
+merge "diffamp_cell_0/Vcp" "li_n360_3080#"
+merge "Cascode_voltage_bias_0/Vcn" "diffamp_cell_0/Vcn" -258.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20000 -1240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "diffamp_cell_0/Vcn" "diffamp_cell_0/a_30_n2280#"
+merge "diffamp_cell_0/a_30_n2280#" "li_n190_10#"

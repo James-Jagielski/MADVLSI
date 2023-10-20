@@ -1,0 +1,28 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell opamp in circuit opamp_LVS.spice (0)(1 instance)
+
+Class opamp_LVS.spice (0):  Merged 27 parallel devices.
+Class diffamp_cell.spice (1):  Merged 27 parallel devices.
+Subcircuit summary:
+Circuit 1: opamp_LVS.spice                 |Circuit 2: diffamp_cell.spice              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (36->22)           |sky130_fd_pr__nfet_01v8 (36->22)           
+sky130_fd_pr__pfet_01v8 (18->5)            |sky130_fd_pr__pfet_01v8 (18->5)            
+Number of devices: 27                      |Number of devices: 27                      
+Number of nets: 21                         |Number of nets: 21                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 6 symmetries.
+Cells have no pins;  pin matching not needed.
+Device classes opamp_LVS.spice and diffamp_cell.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.
