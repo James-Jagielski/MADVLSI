@@ -87,5 +87,5 @@ value=0
 m=1}
 C {madvlsi/gnd.sym} 330 60 0 0 {name=l6 lab=GND}
 C {madvlsi/gnd.sym} -120 60 0 0 {name=l8 lab=GND}
-C {/home/madvlsi/MADVLSI/Miniproject3/opamp.sym} 280 0 0 0 {name=X1}
 C {/home/madvlsi/MADVLSI/Miniproject3/Bias/LDS_Cascode_bias_voltage_generator.sym} 0 0 0 0 {name=X2}
+C {/home/madvlsi/MADVLSI/Miniproject3/layout&schematics/opamp.sym} 280 0 0 0 {name=X1}

@@ -53,9 +53,12 @@ N 80 -60 80 -30 {
 lab=#net1}
 N 50 -10 130 -10 {
 lab=#net3}
-N 320 -0 340 -0 {}
-N 350 0 370 -0 {}
-N 370 -0 420 -0 {}
+N 320 -0 340 -0 {
+lab=#net5}
+N 350 0 370 -0 {
+lab=Vout}
+N 370 -0 420 -0 {
+lab=Vout}
 C {devices/lab_pin.sym} 420 0 2 0 {name=p1 sig_type=std_logic lab=Vout}
 C {madvlsi/vsource.sym} 30 220 0 0 {name=V1
 value=.7}
@@ -84,9 +87,9 @@ C {madvlsi/vdd.sym} 140 -110 0 0 {name=l7 lab=VDD}
 C {madvlsi/isource.sym} -120 30 0 0 {name=I1
 value=1u}
 C {madvlsi/gnd.sym} -120 60 0 0 {name=l8 lab=GND}
-C {/home/madvlsi/MADVLSI/Miniproject3/opamp.sym} 280 0 0 0 {name=X1}
 C {/home/madvlsi/MADVLSI/Miniproject3/Bias/LDS_Cascode_bias_voltage_generator.sym} 0 0 0 0 {name=X2}
 C {madvlsi/vsource.sym} 370 30 0 0 {name=Vout
 value=0.9}
 C {madvlsi/gnd.sym} 370 60 0 0 {name=l9 lab=GND}
 C {madvlsi/ammeter1.sym} 340 0 3 0 {name=VIout}
+C {/home/madvlsi/MADVLSI/Miniproject3/layout&schematics/opamp.sym} 280 0 0 0 {name=X1}
